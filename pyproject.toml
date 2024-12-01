@@ -14,11 +14,15 @@ dependencies = [
     "pytest>=8.3.3",
 ]
 
+[tool.uv]
+    reinstall-package = "advent-2024"
 
 [tool.ruff]
-    select = ["E", "F", "I", "UP", "ERA", "C", "RUF", "PLC", "PLE", "PLR", "PLW", "A",  "RET", ]
     fix = true
     target-version = "py313"
+
+[tool.ruff.lint]
+    select = ["E", "F", "I", "UP", "ERA", "C", "RUF", "PLC", "PLE", "PLR", "PLW", "A",  "RET", ]
     ignore = [
         "PLR2004", # there are a lot of "magic numbers" in aoc
         "E501", # line too long
