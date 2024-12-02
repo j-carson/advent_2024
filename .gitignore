@@ -1,4 +1,8 @@
 **/.ipynb_checkpoints/**
 *.egg-info
+**/__pycache__/**
 
+*.swp
+
+input.txt
 input-sample.txt
