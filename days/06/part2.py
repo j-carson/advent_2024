@@ -31,7 +31,6 @@ class Puzzle:
         "input_data",
         "starting_pos",
         "visited",
-        "visited",
     ]
 
     def __init__(self, input_data=None, clone=None):

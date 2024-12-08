@@ -54,17 +54,7 @@ class Puzzle:
         self.rest = tuple(int(i) for i in rest.split())
 
     def score(self):
-        s1 = solve_item(self.goal, self.rest[0], self.rest[1:])
-        if s1 > 0:
-            return s1
-
-        concat_result = concat_ints(self.rest[0], self.rest[1])
-        if len(self.rest) > 2:
-            return solve_item(self.goal, concat_result, self.rest[2:])
-        if concat_result == self.goal:
-            return self.goal
-
-        return 0
+        return solve_item(self.goal, self.rest[0], self.rest[1:])
 
 
 def solve(input_data):
