@@ -1,12 +1,12 @@
+import re
 import sys
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import pytest
-import re
-from parse import parse
 from icecream import ic
+from parse import parse
 
 # --> Puzzle solution
 

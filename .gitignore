@@ -6,4 +6,5 @@
 
 input.txt
 input-sample.txt
-input-sample2.txt
+input-sample*.txt
+wip.py
